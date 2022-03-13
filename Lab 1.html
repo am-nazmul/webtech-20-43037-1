@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body style="background-color: lightgray;">
+<h2 style="text-align: center;">Doner Information</h2>
+	<form action="submit.php" style="text-align: center;">
+		<label for="fname"><b>First name</b></label>
+		<input type="text" id="fname" name="fname"><br>
+		<label for="lname"><b>Last name</b></label>
+		<input type="text" id="lname" name="lname"><br>
+		<label for="company"><b>Company</b></label>
+		<input type="text" id="company" name="company"><br>
+		<label for="address1"><b>Address 1</b></label>
+		<input type="text" id="address1" name="address1"><br>
+		<label for="address2"><b>Address 2</b></label>
+		<input type="text" id="address2" name="address2"><br>
+		<label for="city"><b>City</b></label>
+		<input type="text" id="city" name="city"><br>
+
+		<label for="states"><b>Select a state</b></label>
+		<select id="state" name="state">
+			<option value="dhaka">Dhaka</option>
+			<option value="rajshahi">Rajshahi</option>
+			<option value="khulna">Khulna</option>
+			<option value="barishal">Barishal</option>
+		</select><br>
+
+		<label for="zipCode"><b>Zip Code</b></label>
+		<input type="text" id="zipCode" name="zipCode"><br>
+
+		<label for="country"><b>Country</b></label>
+		<select id="country" name="country">
+			<option value="bd">Bangladesh</option>
+			<option value="ind">India</option>
+			<option value="pak">Pakistan</option>
+			<option value="sl">Sri Lanka</option>
+		</select><br>
+
+		<label for="phone"><b>Phone</b></label>
+		<input type="text" id="phone" name="phone"><br>
+
+		<label for="fax"><b>Fax</b></label>
+		<input type="text" id="fax" name="fax"><br>
+
+		<label for="email"><b>Email</b></label>
+		<input type="email" id="mail" name="mail"><br>
+
+		<label for="ammount"><b>Donation Ammount</b></label>
+		<input type="radio" id="none" name="dAmmount" value="None">
+		<label for="none">None</label>
+
+		<input type="radio" name="dAmmount" value="50$">
+		<label for="50$">50$</label>
+
+		<input type="radio" name="dAmmount" value="75$">
+		<label for="75$">75$</label>
+
+		<input type="radio" name="dAmmount" value="100$">
+		<label for="100$">100$</label>
+
+		<input type="radio" name="dAmmount" value="others">
+		<label for="others">Others</label><br>
+
+		<label for="others"><b>Other Ammount</b></label>
+		<input type="text" id="others" name="others"><br>
+
+		<label for="RD"><b>Recurring Donation</b></label>
+		<input type="checkbox" id="RD" name="RD">
+		<label>I am interested in giving on a regular basis</label>
+		<label>Monthly Credit Card $ </label>
+		<input type="text" name="mcda">
+		<label>For</label>
+		<input type="text" name="months">
+		<label>months</label>
+
+	</form>
+
+	<h2 style="text-align: center;">Honorarium and Memorial Donation Information</h2>
+
+	<form action="submit.php" style="text-align:center;">
+		<label><b>I would like to make this donation</b></label><br>
+		<input type="radio" name="honor">
+		<label>To Honor</label><br>
+		<input type="radio" name="inMemoryOf">
+		<label>In Memory of</label><br>
+
+		<label for="name"><b>Name</b></label>
+		<input type="text" id="name" name="name"><br>
+
+		<label for="ADname"><b>Acknowledge Donation to</b></label>
+		<input type="text" id="ADname" name="ADname"><br>
+
+		<label for="city"><b>City</b></label>
+		<input type="text" id="city" name="city"><br>
+
+		<label for="state"><b>State</b></label>
+		<select id="state" name="state">
+			<option value="dhaka">Dhaka</option>
+			<option value="rajshahi">Rajshahi</option>
+			<option value="khulna">Khulna</option>
+			<option value="barishal">Barishal</option>
+		</select><br>
+
+		<label for="zip"><b>Zip</b></label>
+		<input type="text" name="zip">
+
+
+	</form>
+
+	<h2 style="text-align:center;">Additional Information</h2>
+
+	<form action="submit.php" style="text-align:center">
+		<label>Please enter your name, company or ogranisation as you would like it to appear in your publication</label><br>
+		<label for="name"><b>Name</b></label>
+		<input type="text" name="name"><br>
+
+		<input type="checkbox" name="cb1">
+		<label>I would like my gift to remain anonymous</label><br>
+		<input type="checkbox" name="cb2">
+		<label>my employer offers a matching program</label><br>
+		<input type="checkbox" name="cb3">
+		<label>Please save the cost </label><br>
+
+		<label><b>Comments</b></label><br>
+		<textarea name="comment" rows="5" cols="25"></textarea>
+		<br>
+
+		<label>How may we contact you ?</label><br>
+		<input type="checkbox" name="mail"> <label>E-mail</label><br>
+		<input type="checkbox" name="postalMail"> <label>Postal Mail</label><br>
+		<input type="checkbox" name="telephone"> <label>Telephone</label><br>
+		<input type="checkbox" name="fax"> <label>Fax</label><br><br>
+
+		<input type="submit" name="Submit">
+
+
+
+
+	</form>
+
+
+
+</body>
+</html>
